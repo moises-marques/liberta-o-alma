@@ -136,3 +136,31 @@ button:hover {
         height: 370px;
     }
 }
+
+/* --- RESPONSIVO ESPECÍFICO: MOTO G(8) POWER LITE --- */
+/* Resolução lógica: 360px x 800px */
+
+@media only screen and (max-width: 360px) {
+    .main-title {
+        font-size: 1.5rem; /* Título menor para não empurrar o card */
+        margin-bottom: 10px;
+    }
+
+    #book-container {
+        width: 100vw; /* Força encostar nas laterais do navegador */
+        height: 520px;
+    }
+
+    #book {
+        width: 85%; /* Ajuste fino para a virada de página no touch */
+    }
+
+    .controls {
+        margin-top: 15px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
