@@ -87,10 +87,42 @@ button:hover {
 }
 
 /* --- RESPONSIVO PARA CELULAR --- */
-@media (max-width: 600px) {
+
+/* --- RESPONSIVO ESPECÍFICO: MOTO G(8) POWER LITE --- */
+/* Resolução lógica: 360px x 800px */
+
+@media (max-width: 800px) {
+
     body {
         overflow-y: auto; /* Permite rolar se o conteúdo for maior que a tela */
     }
+
+    .main-title {
+        font-size: 1.5rem; /* Título menor para não empurrar o card */
+        margin-bottom: 10px;
+    }
+
+    #book-container {
+        width: 400px; /* Força encostar nas laterais do navegador */
+        height: 100px;
+    }
+
+    #book {
+        height: 600px; /* Ajuste fino para a virada de página no touch */
+    }
+
+    .controls {
+        margin-top: 15px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 786px) {
+    
 
     .main-title {
         font-size: 1.5rem; /* Título menor no celular */
@@ -101,17 +133,17 @@ button:hover {
 
     #book-container {
         /* Ajusta o livro para caber em telas pequenas */
-        width: 340px; 
+        width: 350px; 
         height: 400px;
         margin-bottom: 120px;
     }
 
     #book {
-        height: 520px; /* Ajusta a altura proporcionalmente */
+        height: 570px; /* Ajusta a altura proporcionalmente */
     }
 
     .controls {
-        margin-top: 30px;
+        margin-top: 80px;
         gap: 10px;
         width: 100%;
         justify-content: center;
@@ -137,30 +169,3 @@ button:hover {
     }
 }
 
-/* --- RESPONSIVO ESPECÍFICO: MOTO G(8) POWER LITE --- */
-/* Resolução lógica: 360px x 800px */
-
-@media only screen and (max-width: 360px) {
-    .main-title {
-        font-size: 1.5rem; /* Título menor para não empurrar o card */
-        margin-bottom: 10px;
-    }
-
-    #book-container {
-        width: 100vw; /* Força encostar nas laterais do navegador */
-        height: 520px;
-    }
-
-    #book {
-        width: 85%; /* Ajuste fino para a virada de página no touch */
-    }
-
-    .controls {
-        margin-top: 15px;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 0.8rem;
-    }
-}
